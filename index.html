@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA приложение</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="logo">SPA App</div>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Поиск..." id="searchInput">
+                <button class="search-btn" id="searchBtn">Найти</button>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#users" class="nav-link">Пользователи</a></li>
+                <li class="nav-item"><a href="#users#todos" class="nav-link">Задачи</a></li>
+                <li class="nav-item"><a href="#users#posts" class="nav-link">Посты</a></li>
+                <li class="nav-item"><a href="#users#posts#comments" class="nav-link">Комментарии</a></li>
+            </ul>
+        </nav>
+
+        <ul class="breadcrumbs" id="breadcrumbs"></ul>
+
+        <div class="content" id="content">
+            <div class="page-title">Пользователи</div>
+            <div id="usersList"></div>
+        </div>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
